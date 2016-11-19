@@ -10,6 +10,13 @@ public class Admin extends User{
 
     public static String KIND = "admin";
 
+    public Admin(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.creationTime = new DateTime();
+    }
+
     public Admin(Entity entity) {
 
         this.key = entity.getKey();
